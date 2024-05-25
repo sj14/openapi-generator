@@ -599,7 +599,7 @@ func newStrictDecoder(data []byte) *json.Decoder {
 
 // Set request body from an interface{}
 func setBody(body interface{}, contentType string) (bodyBuf *bytes.Buffer, err error) {
-	if bodyBuf == nil {
+	if body == nil {
 		bodyBuf = &bytes.Buffer{}
 	}
 
